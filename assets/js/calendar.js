@@ -293,7 +293,7 @@ function updateEvents(date){
                     <div class="event-title">${event.title}</div>
                     <div class="event-time">${event.time}</div>
                     <span class="${event.isComplete ? "replay" : "check"}"></span>
-                    <span class="edit"></span>
+                    <a href="././event.html" class="edit"></a>
                     <span class="cancel"></span>
                 </div>
                 `;

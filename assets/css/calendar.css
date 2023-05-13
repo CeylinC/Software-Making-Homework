@@ -264,7 +264,8 @@ body{
 .todo .events .event .event-time{
     padding-top: 5px;
 }
-.todo .events .event span::after{
+.todo .events .event span::after,
+.todo .events .event a::after{
     position: absolute;
     color: var(--calendarBorderColor);
     border: 1px solid var(--calendarBorderColor);
@@ -291,13 +292,15 @@ body{
 
 }
 .todo .events .event .edit::after{
+    display: inline-block;
     content: "\270E";
     right: 65px;
     padding-top: 0px;
     padding-bottom: 3px;
 
 }
-.todo .events .event span:hover::after{
+.todo .events .event span:hover::after,
+.todo .events .event a:hover::after{
     box-shadow: 0 0 5px 2px var(--activeDayColor), inset 0 0 5px 2px var(--activeDayColor);
 }
 .todo .events .event.complete{
