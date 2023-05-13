@@ -332,6 +332,6 @@ body{
 }
 .btn:hover{
     letter-spacing: 3px;
-    border: 1px solid var(--calendarBorderColor);
+    border: 1px solid var(--calendarBorderColor) !important;
     box-shadow: 0 0 5px 1px var(--activeDayColor), inset 0 0 3px 1px var(--activeDayColor);
 }
