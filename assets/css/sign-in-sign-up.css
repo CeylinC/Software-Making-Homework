@@ -54,16 +54,16 @@ body{
     border-radius: 10px;
     position: absolute;
 }
+.container form.sign-up > :nth-child(1),
 .container form.sign-up > :nth-child(2),
-.container form.sign-up > :nth-child(3),
-.container form.sign-up > :nth-child(7),
-.container form.sign-up > :nth-child(8)
+.container form.sign-up > :nth-child(6),
+.container form.sign-up > :nth-child(7)
 {
     width: 45%;
     display: inline-block;
 }
-.container form.sign-up > :nth-child(2),
-.container form.sign-up > :nth-child(7){
+.container form.sign-up > :nth-child(1),
+.container form.sign-up > :nth-child(6){
     margin-right: 8%;
 }
 .container form.sign-up{
