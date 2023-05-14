@@ -31,7 +31,7 @@ body{
     color: var(--activeDayColor);
     transition: all 0.5s ease;
     position: relative;
-    width: 150px;
+    width: 100px;
     left: calc(50% - 50px);
 }
 .container form > :nth-child(3) > *{
