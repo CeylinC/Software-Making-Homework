@@ -3,24 +3,13 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 .container{
     height: 100vh;
-    font-family: 'Quicksand', sans-serif;
     background-color: var(--calendarColor) !important;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-
-    --textColor: #454545;
-    --nextMonthDaytextColor: #bababa;
-    --calendarColor: #efefef;
-    --calendarBorderColor: #FFE6C7;
-    --activeDayColor: #FF6000;
 }
 .container .buton-box{
     position: absolute;
@@ -28,7 +17,6 @@ body{
     border: 1px solid var(--activeDayColor);
     padding: 10px 10px;
     border-radius: 30px;
-    overflow: hidden;
 }
 .container .buton-box :first-child{
     position: absolute;
@@ -38,11 +26,10 @@ body{
     border-radius: 30px;
     top: 0;
     left: 0;
-    border: none;
     color: var(--calendarBorderColor);
     transition: left 0.5s ease;
 }
-.container .buton-box button:not(:first-child){
+.container .buton-box button{
     border: 0;
     width: 100px;
     text-align: center;
@@ -82,7 +69,6 @@ body{
     border: 1px solid var(--activeDayColor);
     color: var(--activeDayColor);
     transition: all 0.5s ease;
-    position: relative;
     left: calc(50% - 50px);
 }
 .container form .btn:hover{
@@ -99,6 +85,9 @@ body{
 @media screen and (max-width: 768px) {
     .container form .btn{
         width: 100%;
+        left: 0;
+    }
+    .container form .btn:hover{
         left: 0;
     }
 }
