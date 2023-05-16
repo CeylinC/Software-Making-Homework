@@ -15,24 +15,8 @@
     }
 }
 
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #454545;
-    overflow-x: hidden;
-    font-family: 'Quicksand', sans-serif;
-}
 .container{
-    --textColor: #454545;
-    --nextMonthDaytextColor: #bababa;
-    --calendarColor: #efefef;
-    --calendarBorderColor: #FFE6C7;
-    --activeDayColor: #FF6000;
-
     width: 100vw;
-    color: var(--textColor);
-    display: flex;
     flex-direction: row;
 }
 .calendar{
@@ -241,7 +225,6 @@ body{
 }
 .todo .events{
     color: var(--calendarColor);
-
     overflow-y: auto;
     width: 100%;
 }
@@ -289,7 +272,6 @@ body{
 .todo .events .event .cancel::after{
     content: "\00D7";
     right: 20px;
-
 }
 .todo .events .event .edit::after{
     display: inline-block;
@@ -297,7 +279,6 @@ body{
     right: 65px;
     padding-top: 0px;
     padding-bottom: 3px;
-
 }
 .todo .events .event span:hover::after,
 .todo .events .event a:hover::after{
@@ -306,7 +287,6 @@ body{
 .todo .events .event.complete{
     text-decoration: line-through;
 }
-
 
 @media screen and (max-width: 1024px) {
     .container{
@@ -322,19 +302,4 @@ body{
         width: 80%;
         margin-bottom: 60px;
     }
-}
-.btn{
-    cursor: pointer;
-    border: 1px solid var(--activeDayColor);
-    color: var(--activeDayColor);
-    padding: 5px 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    text-decoration: none;
-}
-.btn:hover{
-    letter-spacing: 3px;
-    border: 1px solid var(--calendarBorderColor) !important;
-    box-shadow: 0 0 5px 1px var(--activeDayColor), inset 0 0 3px 1px var(--activeDayColor);
 }
